@@ -1,3 +1,5 @@
+# Estudio de Carzo
+El presente repositorio contiene la formulación de la obtención de los mejores modelos predictores de la distribución de Carzo.
 ```
 └── 📁Carzo
         └── 📁branches
