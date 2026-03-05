@@ -47,7 +47,7 @@ names(data_cor1)
 # Preparación para modelos:
 ## simplificación de variables:
 predictoras <- predictoras <- data_cor1 %>%
-  select(H, starts_with("BIO")) %>%
+  dplyr::select(H, starts_with("BIO")) %>%
   names()
 
 respuestas <- c("AA_m", # Altura
@@ -94,7 +94,7 @@ metricas_fun <- function(x){
    )
   }, .id = "modelo") %>% arrange(AIC)
 }
-metricas_fun(modelos)
+metricas_modelos <- metricas_fun(modelos)
 
 print(metricas_modelos)
 
